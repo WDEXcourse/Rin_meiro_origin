@@ -26,4 +26,14 @@ public class PlayerMove : MonoBehaviour
             transform.Rotate(0, -5, 0);
         }
     }
+
+    void OnCollisionStay(Collision other)
+
+    {
+        if (other.gameObject.tag == "Goal")
+
+        {
+            Destroy(this.gameObject);
+        }
+    }
 }
