@@ -37,7 +37,7 @@ public class PlayerMove : MonoBehaviour
         if (other.gameObject.tag == "Goal")
         {
             //setactiveで表示
-            this.gameObject.SetActive(true);
+            goal.gameObject.SetActive(true);
         }
     }
 }
